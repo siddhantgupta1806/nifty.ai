@@ -1,0 +1,15 @@
+services:
+  nifty-ai:
+    build: .
+    ports:
+      - "8766:8766"
+    env_file:
+      - .env
+    environment:
+      OPENALGO_HOST: ${OPENALGO_HOST:-http://host.docker.internal:5000}
+      NIFTY_AI_DB_PATH: /app/.nifty_ai/nifty.duckdb
+      NIFTY_AI_CACHE_DIR: /app/.nifty_ai/cache
+      NIFTY_AI_RESULTS_DIR: /app/.nifty_ai/results
+    volumes:
+      - ./.nifty_ai:/app/.nifty_ai
+      - ./examples:/app/examples:ro

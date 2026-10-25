@@ -1,0 +1,13 @@
+.git
+.venv
+.pytest_cache
+.mypy_cache
+.ruff_cache
+.nifty_ai
+__pycache__
+*.pyc
+*.duckdb
+*.duckdb.wal
+.env
+reports
+htmlcov

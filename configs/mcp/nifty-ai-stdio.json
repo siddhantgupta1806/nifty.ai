@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "nifty-ai": {
+      "command": "python",
+      "args": ["-m", "nifty_ai.mcp.server"],
+      "cwd": "C:/Shashwat/nifty.ai",
+      "env": {
+        "OPENALGO_HOST": "http://127.0.0.1:5000"
+      }
+    }
+  }
+}
